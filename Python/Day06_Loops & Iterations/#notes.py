@@ -85,20 +85,16 @@ while True:
  TRAINING ARENA
 ====================''')
     for enemyentered in range(1, enemies_entered + 1):
-        print(f'Enemy {enemyentered} has appeared!')
-        if enemyentered == 6:
-            break
-    print()
-    for enemyenter in range(1, enemyentered + 1):
-        print(f'Enemy {enemyenter} defeated!')
-        if enemyenter == 3:
+        if enemyentered == 3:
+            print('Enemy 3 has appeared!')
             print('Enemy 3 ran away!')
             continue
-        elif enemyenter == 7:
+        elif enemyentered  == 7:
             print('Boss appeared!')
             print('You escaped!')
             break
-    print(f'Enemy {enemyenter} defeated!')
+        print(f'Enemy {enemyentered} has appeared!')
+        print(f'Enemy {enemyentered} defeated!')
     print()
     fight = input('Would you like to train again? (yes/no) ')
     if fight.lower() == 'yes':
